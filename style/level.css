@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+#hint {
+	color: #a6a6a6;
+	margin-top: 50px;
+}
+#hint p {
+	text-align: center;
+	margin: 0px;
+}
+h1 {
+	font-size: 42px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-weight: 400;
+}
+#life {
+	border: 1px solid #999;
+	height: 6px;
+	padding: 2px;
+	width: 120px;
+	margin: 3px auto;
+}
+#life_green {
+	background-color: #75a722;
+	height: 6px;
+	float: left;
+}
+#life_empty {
+	height: 6px;
+	float: right;
+}
+.level_list {
+	width: 590px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 25px auto;
+	padding: 0px;
+}
+.level_list td {
+	border: 1px solid black;
+	height: 21px;
+	margin: 2px;
+	padding: 5px 7px;
+	width: 99px;
+}
+
+.level_list td a {
+	text-decoration: none;
+}
+
+.level_list td a:hover {
+	color: #89d000;
+}
+
+.level_list td span {
+	float: right;
+	margin-top: 5px;
+	font-size: 10px;
+}
+
+.level_list td span img {
+	margin: 0px 5px -2px 0px;
+}
+
+.level_list tr:first-child {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+	height: 42px;
+	background-color: #222;
+}
+
+.even-row {
+	background-color: #333;
+}
+/*
+ .done {
+ color: #ffeecc;
+ }
+ */
+.undone {
+	color: #fff;
+}
+.solved {
+	margin: -45px 0px 40px 0px;
+	font-size: 12px;
+	color: greenYellow;
+	text-align: center;
+}
+.mailform {
+	margin: 20px 30px;
+	padding: 10px 15px;
+	border: 1px solid #444;
+	background-color: #1c1c1c;
+}
+.mailform h4 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.mailform h1 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}

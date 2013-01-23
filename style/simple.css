@@ -1,0 +1,7 @@
+body { font-family: arial, verdana, sans-serif; padding: 1em; font-size: 14px;}
+.bit, .bit0 { color: green }
+.bit1 { color: blue }
+.error { color: red }
+textarea { font-family: arial, verdana, sans-serif; font-size: 14px; }
+
+a { color: #c60; }

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:none;
+}
+#life {
+	border:1px solid #999;
+	height:6px;
+	padding:2px;
+	width:90px;
+	margin:3px;
+}
+#life_green {
+	background-color:#75a722;
+	height:6px;
+	float:left;
+}
+#life_empty {
+	background-color:none;
+	height:6px;
+	float:right;
+}

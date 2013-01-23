@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+#settings {
+	border:1px solid #555555;
+	border-collapse:collapse;
+	margin:0 auto;
+}
+#settings td, #settings tr {
+	border:1px solid #737373;
+	border-collapse:collapse;
+	padding:6px;
+}
+#settings p {
+	margin:0px;
+}
+.left_col {
+	width:170px;
+}
+#avatar {
+	text-align:center;
+	background-color:#333;
+	float:left;
+	width:120px;
+	padding:15px;
+	height:230px;
+}
+#avatar img {
+	max-height:100px;
+	max-width:100px;
+	margin-bottom:15px;
+}
+#avatar p {
+	text-align:center;
+	font-size:12px;
+	margin-bottom:3px;
+}
+
+
+
+.input-row {
+	margin-bottom:3px;
+	margin-left:30px;
+	margin:0px 0px 3px 200px;
+}
+input[type="text"], input[type="password"] {
+	width:130px;
+	height:16px;
+	border:1px solid #272727;
+}
+label {
+	display:inline-block;
+	width:135px;
+}

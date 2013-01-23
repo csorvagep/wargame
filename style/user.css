@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+#user_pic {
+	float:left;
+	height:100px;
+	width:100px;
+}
+#user_pic img {
+	max-height:100px;
+	max-width:100px;
+}
+#user_data {
+	margin-left:110px;
+	padding:20px 0px;
+	margin-bottom:20px;
+}
+#user_div {
+	margin:30px auto 0px;
+	padding:20px 20px 10px 20px;
+	width:560px;
+}
+#user_name {
+	font-weight:bold;
+	font-size:32px;
+	line-height:32px;
+	margin:0px;
+}
+.user_values {
+	font-weight:bold;
+	width:180px;
+}
+.user_values p {
+	text-align:right;
+}
+
+table {
+	border-collapse:collapse;
+	margin:5px 0px 10px 0px;
+	width:100%;
+}
+td {
+	border:1px solid #151515;
+	padding:4px;
+}
+td p {
+	margin:3px;
+	text-align:left;
+}
+tr {
+	color:#ddd;
+}
+.even-row {
+	background-color:#333;
+}

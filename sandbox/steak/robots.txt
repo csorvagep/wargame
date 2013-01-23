@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /bin/
+Disallow: /CachedObjects/
+Disallow: /cgi-bin/
+Disallow: /memcached/
+Disallow: /Secure/TopSecret/
+Disallow: /userdata/
+Disallow: /nodejs/

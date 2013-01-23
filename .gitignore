@@ -1,0 +1,8 @@
+*.class
+*.pyc
+*.pyo
+*/.git/*
+*/.settings/*
+*/sandbox/*
+*/levels/files/*
+content/includes/database.php

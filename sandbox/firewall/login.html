@@ -1,0 +1,475 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<script language="JavaScript">
+	if (parent.location.href != window.location.href)
+	parent.location.href = window.location.href;
+
+var browserDetect = navigator.userAgent.toLowerCase();
+var browserDetectOS,browserDetectBrowser,browserDetectVersion,browserDetectTotal,browserDetectString;
+if (checkIt('konqueror'))
+{
+	browserDetectBrowser = "Konqueror";
+	browserDetectOS = "Linux";
+}
+else if (checkIt('firefox')) browserDetectBrowser = "Firefox"
+else if (checkIt('safari')) browserDetectBrowser = "Safari"
+else if (checkIt('omniweb')) browserDetectBrowser = "OmniWeb"
+else if (checkIt('opera')) browserDetectBrowser = "Opera"
+else if (checkIt('webtv')) browserDetectBrowser = "WebTV";
+else if (checkIt('icab')) browserDetectBrowser = "iCab"
+else if (checkIt('msie')) browserDetectBrowser = "Internet Explorer"
+else if (!checkIt('compatible'))
+{
+	browserDetectBrowser = "Netscape Navigator"
+	browserDetectVersion = browserDetect.charAt(8);
+}
+else browserDetectBrowser = "An unknown browser";
+if (!browserDetectVersion) browserDetectVersion = browserDetect.charAt(broswerPlace + browserDetectString.length);
+if (!browserDetectOS)
+{
+	if (checkIt('linux')) browserDetectOS = "Linux";
+	else if (checkIt('x11')) browserDetectOS = "Unix";
+	else if (checkIt('mac')) browserDetectOS = "Mac"
+	else if (checkIt('win')) browserDetectOS = "Windows"
+	else browserDetectOS = "an unknown operating system";
+}
+function checkIt(string)
+{
+	broswerPlace = browserDetect.indexOf(string) + 1;
+	browserDetectString = string;
+	return broswerPlace;
+}
+var ap_mode= '0';
+var login_success= '0';
+
+var if_number=2;
+var bWanConnected=0;
+var bWanUseModem=0;
+var wan_type=0;
+var lan_gateway_ip="192.168.2.1";
+var lan_gateway_mask="255.255.255.0";
+var dhcp_enable=1;
+var firewall_func=1;
+var firewall_enable=1;
+var upnp_enable=0;
+var wireless_func=1;
+var wireless_enable=1;
+var w11a_enable=0;
+var ipsec_func=0;
+var printer_func=0;
+var dhcp_client_num=1;
+var runtime_code_version="9.10.09";
+var boot_code_version="0.03a";
+var wlan_mac_addr="00-17-3F-DA-00-5C";
+var lan_mac_addr="00-17-3F-DA-00-5C";
+var wan_mac_addr="00-17-3F-DA-00-5D";
+var hardware_version="02";
+var serial_number="BE701751457";
+
+var bWanConnected=1;
+
+
+var version_eb=0;
+
+
+
+function checkVersion()
+{
+	newwin=window.open("login.html","Firmware","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,width=395,height=200,resizable=0");
+	newwin.focus();
+}
+
+</script>
+<style type="text/css" media="screen">
+
+body{
+	background:#ffffff;
+	color:#000000
+}
+
+.leftLink{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10.5px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #003366;
+	text-decoration: none
+}
+
+.top_nav{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+.section{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none
+}
+
+.head_bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height: 15px;
+	font-weight: bold;
+	color: #003399;
+	text-decoration: none
+}
+
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	none; color: #003366
+}
+
+a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	color: #000000
+}
+
+.copy_1{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #003366
+}
+
+.copy_1b{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #003366
+}
+
+.submitBtn{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border-color: #3399CC;
+	background-color: #006699;
+	color: #ffffff
+}
+
+</style>
+
+</head>
+<script language="JavaScript">
+if(version_eb == 1)
+{
+	document.write('<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="document.tF.pws.focus();" onUnload="checkVersion()">');
+}
+else
+	document.write('<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="document.tF.pws.focus();">');
+</script>
+<form action="login.php" method="post" name="tF">
+<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%" height="100%">
+	<script language="javascript">
+{
+	document.write('<tr>');
+	document.write('<td colspan="3" bordercolor="#FFFFFF" height="64">');
+	document.write('<table width="100%" border="0" cellspacing="0" cellpadding="0">');
+	document.write('<tr>');
+	document.write('<td rowspan="3" width="20" valign="bottom"><a href="http://www.belkin.com"><img src="images/head_logo.gif" border="0" width="121" height="64"></a></td>');
+	document.write('<td colspan="4" height="21" align="right" nowrap>&nbsp;</td>');
+	document.write('</tr>');
+	document.write('<tr>');
+	document.write('<td colspan="4" height="14"><img src="images/title.gif" height="15" width="265"></td>');
+	document.write('</tr>');
+	document.write('<tr>');
+	document.write('<td background="images/bar_floor.gif" width="150" height="28"><img src="images/shim.gif" width="1" height="28"></td>');
+	document.write('<td background="images/bar.gif" height="28"><img src="images/bar_slope.gif" width="163" height="28"></td>');
+	document.write('<td background="images/bar.gif" height="28" align="right" nowrap class="top_nav">');
+	document.write('<nobr>');
+	document.write('<a href="index.html" class="top_nav">Home</a> |');
+	document.write('<a href="login.html" class="top_nav">Help</a> |');
+//	alert ("back_url=" + location.href);
+//	if (location.href.indexOf('login') != -1 )
+	{ //login.html
+		if (login_success != 2)
+			document.write('<a href="login.html" class="top_nav">Login</a> &nbsp; &nbsp;');
+		else
+			document.write('<a href="login.html" class="top_nav">Logout</a> &nbsp; &nbsp;');
+	}
+//	else if (location.href.indexOf('index') != -1 )
+//	{	//index.html
+//		if (login_success != 2)
+//			document.write('<a href="login.html" class="top_nav">Login</a> &nbsp; &nbsp;');
+//		else
+//			document.write('<a href="login.html" class="top_nav">Logout</a> &nbsp; &nbsp;');
+//	}
+//	else if (location.href.indexOf('') != -1 )
+//	{	// root
+//		alert ("HHH");
+//		if (login_success != 2)
+//			document.write('<a href="login.html" class="top_nav">Login</a> &nbsp; &nbsp;');
+//		else
+//			document.write('<a href="login.html" class="top_nav">Logout</a> &nbsp; &nbsp;');
+//	}
+//	else
+//	{
+//		alert ("NNN");
+//		document.write('<a href="login.html" class="top_nav">Logout</a> &nbsp; &nbsp;');
+//	}
+						if (ap_mode == 0)
+						{
+							document.write('<span class="top_nav">Internet Status:<b>');
+
+								if(bWanConnected==1)
+									document.write('<font face="verdana,arial" size="2" color="#33FF33">Connected</font></b></span>');
+								else
+									document.write('<font face="verdana,arial" size="2" color="#FF0000">No Connection</font></b></span>');
+						}
+
+	document.write('</nobr>');
+	document.write('</td>');
+	document.write('<td height="28" align="right" background="images/bar.gif"><img src="images/bar_cap.gif" width="11" height="28"></td>');
+	document.write('</tr>');
+	document.write('</table>');
+	document.write('</td>');
+	document.write('</tr>');
+}
+
+</script>
+
+	<tr>
+		<td valign="top" width="130" height="100%">
+			<table width="140" border="0" cellspacing="0" cellpadding="0" align="left">
+				<script language="javascript">
+if (login_success != 2)
+{
+	if (ap_mode == 0)
+	{
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">LAN Setup</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">LAN Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DHCP Client List</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Internet WAN</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Connection Type</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DNS</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">MAC Address</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Wireless</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Channel and SSID</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Use as Access Point</a></td></tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WDS</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Firewall</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Application Gateways</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Virtual Servers</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Client IP Filters</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">MAC Address Filtering</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DMZ</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WAN Ping Blocking</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security Log</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Utilities</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Parental Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restart Router</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Factory Default</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Save/Backup Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Previous Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Firmware Update</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">System Settings</a></td></tr>');
+	}
+	else
+	{	//ap_mode=1
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8"><a href="login.html" class="section">Wireless</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Channel and SSID</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Access Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Use as Access Point</a></td></tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WDS</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Utilities</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Parental Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restart Router</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Factory Default</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Save/Backup Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Previous Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Firmware Update</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">System Settings</a></td></tr>');
+
+	}
+}
+else
+{
+	if (ap_mode == 0)
+	{
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">LAN Setup</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">LAN Settings</a><br></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DHCP Client List</a><br></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8"><a href="login.html" class="section">Internet WAN</a></td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Connection Type</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DNS</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">MAC Address</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8"><a href="login.html" class="section">Wireless</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Channel and SSID</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Use as Access Point</a></td></tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WDS</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Firewall</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Application Gateways</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Virtual Servers</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Client IP Filters</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">MAC Address Filtering</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">DMZ</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WAN Ping Blocking</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security Log</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Utilities</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Parental Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restart Router</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Factory Default</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Save/Backup Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Previous Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Firmware Update</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">System Settings</a></td></tr>');
+	}
+	else
+	{	//ap_mode=1
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140"  background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8"><a href="login.html" class="section">Wireless</a>');
+		document.write('</td>');
+		document.write('</tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Channel and SSID</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Security</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Access Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Use as Access Point</a></td></tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">WDS</a></td></tr>');
+
+		document.write('<tr>');
+		document.write('<td colspan="2" height="20" width="140" background="images/blu_bar.gif">');
+		document.write('<img src="images/shim.gif" width="8" height="8">');
+		document.write('<a href="login.html" class="section">Utilities</a>');
+		document.write('</td>');
+		document.write('</tr>');
+//		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Parental Control</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restart Router</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Factory Default</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Save/Backup Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Restore Previous Settings</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">Firmware Update</a></td></tr>');
+		document.write('<tr><td width="5">&nbsp;</td><td valign="top" class="leftLink"><a href="login.html">System Settings</a></td></tr>');
+	}
+}
+</script>
+
+		</table>
+	</td>
+	<td valign="top" width="1" bgcolor="#006699" height="100%"><img src="images/shim.gif" width="1" height="1"></td>
+	<td valign="top" width="99%" height="100%" class="head_bold">
+	<br>&nbsp;Login<br>
+	<!--This is Login.html-->
+		<table border=0 class="copy_1">
+			<tr>
+				<td width="5" colspan="2">&nbsp;</td></tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td>
+					<table width="480" border="0" cellspacing="5" cellpadding="0" align=left class="copy_1">
+						<tr>
+							<td width="69" height="41">&nbsp;</td>
+							<td height="41" class="copy_1" colspan="2">
+								Before you can change any settings, you need to log in with a password. If you have not yet set a custom password, then check your user's manual for the default password.
+							</td>
+						</tr>
+						<tr>
+							<td colspan=3>&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="69">&nbsp;</td>
+							<td width="146"><b>Password</b></td>
+							<td width="250"><INPUT type="password" maxLength="12" size="16" name="pws"></td>
+						</tr>
+						<tr>
+							<td width="69">&nbsp;</td>
+							<td colspan="2" align=center>
+								<nobr>
+								<input type="button" onClick="javascript:document.tF.reset();" value="Clear Changes" style="{width:120px;}" class="submitBtn" onMouseOver="window.status='Clear'; return true;" onMouseOut="window.status=''; return true;">
+								&nbsp;&nbsp;
+								<input type="submit" value="Submit" style="{width:120px;}" class="submitBtn">
+							</td>
+								</nobr>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

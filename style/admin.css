@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#user_list {
+	border:1px solid #555;
+	border-collapse:collapse;
+	margin-top:15px;
+}
+#user_list tr, #user_list td {
+	border:1px solid #555;
+	border-collapse:collapse;
+	padding:3px;
+}
+#user_list tr.paros {
+	background:#333;
+}
+#user_list tr:first-child {
+	height:28px;
+	background:black;
+}
+#user_list tr:first-child p {
+	margin:0px;
+	font-weight:800;
+	text-align:center;
+}
+.hint_form {
+	width:400px;
+}

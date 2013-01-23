@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {
+	border-collapse:collapse;
+	margin:5px 0px;
+}
+td {
+	border:1px solid #151515;
+	padding:4px;
+}
+tr {
+	color:#ddd;
+}
+tr:first-child {
+	font-weight:bold;
+	text-align:center;
+	background-color:#191919;
+	color:white;
+}
+#top10, #levels {
+	display:inline-block;
+}
+#levels {
+	margin-left:50px;
+}
+.even-row {
+	background-color:#333;
+}
